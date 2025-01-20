@@ -1,0 +1,214 @@
+
+/*
+Thanks for using FonitfyJS here can you manage all of the proccesed fonts for your project, enjoy!
+*/
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RUBIK_GLITCH_rubikglitch_regular';
+    src: url('./public/fonts/fontify/rubik_glitch/rubikglitch_regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'DANCING_SCRIPT_dancingscript_regular';
+    src: url('./public/fonts/fontify/dancing_script/dancingscript_regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'DANCING_SCRIPT_dancingscript_variablefont_wght';
+    src: url('./public/fonts/fontify/dancing_script/dancingscript_variablefont_wght.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'DANCING_SCRIPT_dancingscript_bold';
+    src: url('./public/fonts/fontify/dancing_script/dancingscript_bold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'DANCING_SCRIPT_dancingscript_medium';
+    src: url('./public/fonts/fontify/dancing_script/dancingscript_medium.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'DANCING_SCRIPT_dancingscript_semibold';
+    src: url('./public/fonts/fontify/dancing_script/dancingscript_semibold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_blackitalic';
+    src: url('./public/fonts/fontify/lato/lato_blackitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_thinitalic';
+    src: url('./public/fonts/fontify/lato/lato_thinitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_bolditalic';
+    src: url('./public/fonts/fontify/lato/lato_bolditalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_light';
+    src: url('./public/fonts/fontify/lato/lato_light.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_thin';
+    src: url('./public/fonts/fontify/lato/lato_thin.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_bold';
+    src: url('./public/fonts/fontify/lato/lato_bold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_regular';
+    src: url('./public/fonts/fontify/lato/lato_regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_italic';
+    src: url('./public/fonts/fontify/lato/lato_italic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_lightitalic';
+    src: url('./public/fonts/fontify/lato/lato_lightitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'LATO_lato_black';
+    src: url('./public/fonts/fontify/lato/lato_black.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'MORDIS_mordis';
+    src: url('./public/fonts/fontify/mordis/mordis.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_regular';
+    src: url('./public/fonts/fontify/poppins/poppins_regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_bolditalic';
+    src: url('./public/fonts/fontify/poppins/poppins_bolditalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_mediumitalic';
+    src: url('./public/fonts/fontify/poppins/poppins_mediumitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_lightitalic';
+    src: url('./public/fonts/fontify/poppins/poppins_lightitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_black';
+    src: url('./public/fonts/fontify/poppins/poppins_black.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_thinitalic';
+    src: url('./public/fonts/fontify/poppins/poppins_thinitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_italic';
+    src: url('./public/fonts/fontify/poppins/poppins_italic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_bold';
+    src: url('./public/fonts/fontify/poppins/poppins_bold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_extralight';
+    src: url('./public/fonts/fontify/poppins/poppins_extralight.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_light';
+    src: url('./public/fonts/fontify/poppins/poppins_light.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_thin';
+    src: url('./public/fonts/fontify/poppins/poppins_thin.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_semibold';
+    src: url('./public/fonts/fontify/poppins/poppins_semibold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_extralightitalic';
+    src: url('./public/fonts/fontify/poppins/poppins_extralightitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_semibolditalic';
+    src: url('./public/fonts/fontify/poppins/poppins_semibolditalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_extrabolditalic';
+    src: url('./public/fonts/fontify/poppins/poppins_extrabolditalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_extrabold';
+    src: url('./public/fonts/fontify/poppins/poppins_extrabold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_blackitalic';
+    src: url('./public/fonts/fontify/poppins/poppins_blackitalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'POPPINS_poppins_medium';
+    src: url('./public/fonts/fontify/poppins/poppins_medium.woff2') format('woff2');
+}
