@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client"
 import type React from "react"
 import "./style.css"
 
@@ -23,16 +24,41 @@ export default function InfiniteHorizontalSlider({ images, speed = 1000 }: IInfi
       <div className="wrapper">
         <section style={{ "--speed": `${speed}ms` } as SliderStyle}>
           {images.map(({ id, image }) => (
-            <div className="image" key={id}>
+            <motion.div
+            initial={{
+              scale: 1,
+              rotate: 0
+            }}
+            animate={{
+              scale: 1,
+              rotate: 0
+            }}
+            whileHover={{
+              scale: 1.1,
+              rotate: 10
+            }}
+            className="image" key={id}>
               <img src={image || "/placeholder.svg"} alt={id} />
-            </div>
+            </motion.div>
           ))}
         </section>
         <section style={{ "--speed": `${speed}ms` } as SliderStyle}>
           {images.map(({ id, image }) => (
-            <div className="image" key={id}>
+            <motion.div
+            initial={{
+              scale: 1,
+              rotate: 0
+            }}
+            animate={{
+              scale: 1,
+              rotate: 0
+            }}
+            whileHover={{
+              scale: 1.1,
+              rotate: 10
+            }} className="image" key={id}>
               <img src={image || "/placeholder.svg"} alt={id} />
-            </div>
+            </motion.div>
           ))}
         </section>
       </div>

@@ -2,6 +2,8 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import * as motion from "motion/react-client"
 import InfiniteHorizontalSlider from '@/components/InfiniteHorizontalSlider'
+import ComponentSlideTransition from '@/components/Transitions/Component/Slide';
+import ResponsiveNavbar from '@/components/Navbar/Responsive';
 //import Carousel from '@/components/Carousel'
 
 
@@ -41,42 +43,40 @@ const images = [
 export default function HelloPage() {
   return (
     <motion.div
-    className="bg-gray-80 h-screen overflow-hidden"
+    className="h-screen overflow-hidden"
     initial={{
       scale: 0.5,
-      translateY: '0%',
+      translateY: '100%',
       borderRadius: '0rem',
     }}
     animate={{
-      scale: [0.5, 0.5, 1],
-      translateY: ['100%', '0%', '0%'],
-      borderRadius: '0rem'
+      scale: [0.5, 0.5, 1, 1, 0.97],
+      translateY: ['100%', '0%', '0%', '0%', '0%'],
+      borderRadius: ['0rem', '0rem', '0rem', '0rem', '1rem']
     }}
     transition={{
-      duration: 2,
-    }}
-    whileHover={{
-      scale: 0.97,
-      borderRadius: '1rem',
-      transition: {
-        duration: 0.2,
-        type: "spring",
-        stiffness: 30,
-        damping: 20,
-        mass: 1,
-
-      }
+      duration: 4,
     }}
     >
 
-      <div className='w-full h-full flex flex-row'>
-        <div className="w-[350px] h-screen">
+      <div className='w-full h-full flex lg:flex-row flex-col'>
+        <ComponentSlideTransition
+          directionAnimation="down"
+          durationAnimation={0.6}
+          delayAnimation={0}
+        >
+          <div className='hidden lg:block h-full text-white font-DANCING_SCRIPT_dancingscript_semibold text-center text-md pr-6 bg-transparent [writing-mode:vertical-lr] [text-orientation:mixed] border-r-2'>Adrià Martín Martorell made it in 2025.</div>
+        </ComponentSlideTransition>
+          
+        <ResponsiveNavbar/>
+        <div className="w-[350px] h-screen hidden lg:block">
           <Navbar/>
+          
         </div>
         
         <div className='h-full w-full bg-gray-900 overflow-y-scroll'>
           <motion.header
-          className='text-8xl text-left pl-10 font-POPPINS_poppins_black my-16 px-4'
+          className='text-8xl text-left pl-10 font-POPPINS_poppins_black my-16 px-4 max-w-screen-lg mx-auto overflow-hidden'
           initial={{
             opacity: 0,
             translateY: -80,
@@ -96,17 +96,7 @@ export default function HelloPage() {
             <motion.div className='flex border-t-8 border-r-8 pr-1 pt-1 border-white border-dashed'>
               
               <motion.h1
-                className='text-white border-2 pl-3 border-white'
-                /*initial={{
-                  paddingTop: '0rem'
-                }}
-                animate={{
-                  paddingTop: ['2.5rem', '1rem', '3rem']
-                }}
-                transition={{
-                  delay: 1.3,
-                  duration: 3
-                }}*/
+                className='text-4xl sm:text-5xl md:text-6xl lg:text-[8vw] xl:text-[6vw] text-white border-2 pl-3 border-white break-words whitespace-normal'
               >
                 <motion.div
                 className='flex w-[10px] h-10 mt-3 border-y-2 border-white justify-center items-center'
@@ -124,6 +114,7 @@ export default function HelloPage() {
                 >
                   <div className="h-full w-[2px] bg-white"/>
                 </motion.div>
+
                 <motion.span
                   initial={{ backgroundPosition: '200% center' }}
                   animate={{ backgroundPosition: '-200% center' }}
@@ -185,7 +176,7 @@ export default function HelloPage() {
             translateY: '100%',
           }}
           animate={{
-            translateY: 0,
+            translateY: '0%',
           }}
           transition={{
             duration: 2,
@@ -204,7 +195,7 @@ export default function HelloPage() {
             </div>
             
             <motion.section
-            className='w-full py-2 bg-white'
+            className='w-full py-2 flex flex-col justify-start'
             initial={{
               translateX: '100%',
             }}
@@ -219,14 +210,21 @@ export default function HelloPage() {
               damping: 20,
               mass: 1,
             }}
+            whileHover={{
+              translateX: '10%'
+            }}
             >
-              <button className='w-60 h-60 border-2 font-LATO_lato_black'>
-                <span>PROYECTOS</span>
-              </button>
+              <div className='pb-3 bg-[#D2B48C]'>
+                  <span className='border-r-2 border-gray-900 bg-[#D2B48C] p-4 px-6 font-POPPINS_poppins_bold'>Proyectos</span>
+              </div>
+              <div className='w-full h-[2px] bg-gradient-to-l from-[#bc9a6d] to-[#D2B48C]'/>
+              <div className='h-60 w-full bg-gradient-to-t from-[#bc9a6d] to-[#D2B48C]'>
+                
+              </div>
               
             </motion.section>
             <motion.section
-            className='w-full py-2 bg-white'
+            className='w-full py-2 flex flex-col justify-start'
             initial={{
               translateX: '100%',
             }}
@@ -241,10 +239,17 @@ export default function HelloPage() {
               damping: 20,
               mass: 1,
             }}
+            whileHover={{
+              translateX: '10%'
+            }}
             >
-              <button className='w-60 h-60 border-2 font-LATO_lato_black'>
-                <span>PROYECTOS</span>
-              </button>
+              <div className='pb-3 bg-[#D2B48C]'>
+                  <span className='border-r-2 border-gray-900 bg-[#D2B48C] p-4 px-6 font-POPPINS_poppins_bold'>Proyectos</span>
+              </div>
+              <div className='w-full h-[2px] bg-gradient-to-l from-[#bc9a6d] to-[#D2B48C]'/>
+              <div className='h-60 w-full bg-gradient-to-t from-[#bc9a6d] to-[#D2B48C]'>
+                
+              </div>
               
             </motion.section>
           </motion.main>
